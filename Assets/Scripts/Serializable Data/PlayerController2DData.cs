@@ -85,6 +85,11 @@ namespace TwoDTools
         public bool usePreEmptiveCoyoteTime;
         public float preEmptiveCoyoteTime = 0.16f;
 
+
+        public bool useWallJump = true;
+        public float horizontalForceJumpingBackIntoWall = 4;
+        public float horizontalForceJumpingAwayFromWall = 6;
+
         #endregion // Jumping
 
 
@@ -98,10 +103,12 @@ namespace TwoDTools
         public int horizontalRaycasts = 5;
         public float raycastSpreadAmountHorizontal = 0f;
         public float raycastLengthHorizontal = .31f;
+        public bool raycastHorizontalIgnoreTriggers = false;
         // Vertical
         public int verticalRaycasts = 5;
         public float raycastSpreadAmountVertical = 0f;
         public float raycastLengthVertical = .61f;
+        public bool raycastVerticalIgnoreTriggers = false;
 
         // Layer Mask Setup
         public LayerMask terrainLayer;
